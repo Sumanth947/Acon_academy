@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  base    = "client"            # cd into client/ first
+  command = "npm ci && npm run build"
+  publish = "dist"              # then serve client/dist/
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
