@@ -2,10 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
-// Log out what Vite thinks your env vars are
-console.log('🔑 Firebase API Key:', import.meta.env.VITE_FIREBASE_API_KEY);
-console.log('🌐 Auth Domain:',  import.meta.env.VITE_FIREBASE_AUTH_DOMAIN);
-console.log('📦 Project ID:',    import.meta.env.VITE_FIREBASE_PROJECT_ID);
+
 
 const firebaseConfig = {
   apiKey:  import.meta.env.VITE_FIREBASE_API_KEY,
